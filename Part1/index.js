@@ -1,28 +1,17 @@
+const turns = []
 
-let game = ['X']
-
-
-function play(clickedId){
-    let player = document.getElementById("game") 
-    if (game.clickedId = 'X') {
-        game.clickedId = 'O'
+function play (id) {
+    const clicked = document.getElementById('player')
+    const player = document.getElementById(id)
+    if (clicked.innerText === 'X') {
+        clicked.innerText = 'O';
+        player.innerText = 'X';
+        turns.clicked = 'X'
+    }else {
+        clicked.innerText = 'X'
+        player.innerText = 'O'
+        turns.clicked = 'O'
     }
-    else {
-        game.clickedId === 'X'
-    }
-    let clickedElement = document.getElementById(clickedId);
-    if (document.getElementById = "player") {
-        clickedElement.innerText = 'X'
-    }
-    else {
-        clickedElement.innerText = 'O'
-    }
+    console.log(turns)
+}
 
-
-// for (let i=9; i===9;){
-//     if (document.querySelectorAll('td') === 'X') { alert('Try Again') }
-//     else {
-//         alert("O's win!!!")
-//             }
-//         }
-// };
